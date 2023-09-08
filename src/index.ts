@@ -11,4 +11,4 @@ app.use(express.json());
 app.use(logger('dev'));
 app.use(express.static("./public"));
 app.use('/api',userRoute);
-app.listen(3000);
+app.listen(3000,()=>console.log("listening on port 3000"));
